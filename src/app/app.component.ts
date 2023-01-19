@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {} from 'rxjs';
+import {} from 'rxjs/operators';
+import {people} from '../shared/interface'
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'RxJs-project';
+  people = [
+    {name: 'one', age: 1,},
+    {name: 'one', age: 1,},
+    {name: 'one', age: 1,},
+    {name: 'one', age: 1,},
+    {name: 'one', age: 1,},
+    {name: 'one', age: 1,},
+    {name: 'one', age: 1,},
+    {name: 'one', age: 1,},
+    {name: 'one', age: 1,},
+    {name: 'one', age: 1,},
+    {name: 'one', age: 1,},
+    {name: 'one', age: 1,}
+  ]
+  constructor() {
+    console.log(this.people);
+  }
 }
